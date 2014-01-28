@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A50357AD189823CD007D41BD /* TTStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = A50357AC189823CD007D41BD /* TTStudent.m */; };
 		A5695D0118982232003BC864 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5695D0018982232003BC864 /* Foundation.framework */; };
 		A5695D0318982232003BC864 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5695D0218982232003BC864 /* CoreGraphics.framework */; };
 		A5695D0518982232003BC864 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5695D0418982232003BC864 /* UIKit.framework */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A50357AB189823CD007D41BD /* TTStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStudent.h; sourceTree = "<group>"; };
+		A50357AC189823CD007D41BD /* TTStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTStudent.m; sourceTree = "<group>"; };
 		A5695CFD18982232003BC864 /* Dictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dictionary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5695D0018982232003BC864 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A5695D0218982232003BC864 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -117,6 +120,8 @@
 				A5695D3518982283003BC864 /* TTViewController.h */,
 				A5695D3618982283003BC864 /* TTViewController.m */,
 				A5695D3718982283003BC864 /* TTViewController.xib */,
+				A50357AB189823CD007D41BD /* TTStudent.h */,
+				A50357AC189823CD007D41BD /* TTStudent.m */,
 				A5695D1818982232003BC864 /* Images.xcassets */,
 				A5695D0718982232003BC864 /* Supporting Files */,
 			);
@@ -251,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5695D1118982232003BC864 /* TTAppDelegate.m in Sources */,
+				A50357AD189823CD007D41BD /* TTStudent.m in Sources */,
 				A5695D0D18982232003BC864 /* main.m in Sources */,
 				A5695D3818982283003BC864 /* TTViewController.m in Sources */,
 			);
@@ -453,6 +459,7 @@
 				A5695D3118982232003BC864 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A5695D3218982232003BC864 /* Build configuration list for PBXNativeTarget "DictionaryTests" */ = {
 			isa = XCConfigurationList;
@@ -461,6 +468,7 @@
 				A5695D3418982232003BC864 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

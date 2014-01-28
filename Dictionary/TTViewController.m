@@ -7,6 +7,7 @@
 //
 
 #import "TTViewController.h"
+#import "TTStudent.h"
 
 @interface TTViewController ()
 
@@ -14,19 +15,47 @@
 
 @implementation TTViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    TTStudent *student1 = [[TTStudent alloc]initStudetWithName:@"Sergey" secondName:@"Ivanov" phrase:@"good luck"];
+    TTStudent *student2 = [[TTStudent alloc]initStudetWithName:@"Viktor" secondName:@"Petrov" phrase:@"to be or not to be"];
+    TTStudent *student3 = [[TTStudent alloc]initStudetWithName:@"Sergey" secondName:@"Sidorov" phrase:@"perezdam"];
+    TTStudent *student4 = [[TTStudent alloc]initStudetWithName:@"Andrey" secondName:@"Shumik" phrase:@"ya uge vihogu"];
+    TTStudent *student5 = [[TTStudent alloc]initStudetWithName:@"Ivan" secondName:@"Doroshenko" phrase:@"toliko pobeda"];
+    TTStudent *student6 = [[TTStudent alloc]initStudetWithName:@"Maksim" secondName:@"Tatarenko" phrase:@"nu za ribalku"];
+    TTStudent *student7 = [[TTStudent alloc]initStudetWithName:@"Andrey" secondName:@"Ivanov" phrase:@"Senya beregi nogu"];
+    
+    
+    NSMutableDictionary *journal = [[[NSMutableDictionary alloc]initWithObjectsAndKeys:
+                                    student1,[NSString stringWithFormat:@"%@ %@",[student1 name],[student1 secondname]],
+                                    student2,[NSString stringWithFormat:@"%@ %@",[student2 name],[student2 secondname]],
+                                    student3,[NSString stringWithFormat:@"%@ %@",[student3 name],[student3 secondname]],
+                                    student4,[NSString stringWithFormat:@"%@ %@",[student4 name],[student4 secondname]],
+                                    student5,[NSString stringWithFormat:@"%@ %@",[student5 name],[student5 secondname]],
+                                    student6,[NSString stringWithFormat:@"%@ %@",[student6 name],[student6 secondname]],
+                                    student7,[NSString stringWithFormat:@"%@ %@",[student7 name],[student7 secondname]],  nil]autorelease];
+    
+    
+    for (NSString *key in [journal allKeys]) {
+        NSLog(@"%@ favorite phrase:\"%@\"",key, [[journal objectForKey:key] phrase]);
+    }
+    
+    
+    NSLog(@"____________________________________________________________________________________________");
+    
+    NSArray *keys = [journal allKeys];
+    NSArray *sortedKeys = [keys sortedArrayUsingComparator:^NSComparisonResult(id a1, id a2) {
+        return [a1 compare:a2];
+    }];
+    
+    for (NSString *key in sortedKeys) {
+        NSLog(@"%@ favorite phrase:\"%@\"",key, [[journal objectForKey:key] phrase]);
+    }
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
