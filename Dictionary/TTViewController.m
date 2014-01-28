@@ -20,13 +20,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    TTStudent *student1 = [[TTStudent alloc]initStudetWithName:@"Sergey" secondName:@"Ivanov" phrase:@"good luck"];
-    TTStudent *student2 = [[TTStudent alloc]initStudetWithName:@"Viktor" secondName:@"Petrov" phrase:@"to be or not to be"];
-    TTStudent *student3 = [[TTStudent alloc]initStudetWithName:@"Sergey" secondName:@"Sidorov" phrase:@"perezdam"];
-    TTStudent *student4 = [[TTStudent alloc]initStudetWithName:@"Andrey" secondName:@"Shumik" phrase:@"ya uge vihogu"];
-    TTStudent *student5 = [[TTStudent alloc]initStudetWithName:@"Ivan" secondName:@"Doroshenko" phrase:@"toliko pobeda"];
-    TTStudent *student6 = [[TTStudent alloc]initStudetWithName:@"Maksim" secondName:@"Tatarenko" phrase:@"nu za ribalku"];
-    TTStudent *student7 = [[TTStudent alloc]initStudetWithName:@"Andrey" secondName:@"Ivanov" phrase:@"Senya beregi nogu"];
+    TTStudent *student1 = [[[TTStudent alloc]initStudetWithName:@"Sergey" secondName:@"Ivanov" phrase:@"good luck"]autorelease];
+    TTStudent *student2 = [[[TTStudent alloc]initStudetWithName:@"Viktor" secondName:@"Petrov" phrase:@"to be or not to be"]autorelease];
+    TTStudent *student3 = [[[TTStudent alloc]initStudetWithName:@"Sergey" secondName:@"Sidorov" phrase:@"perezdam"]autorelease];
+    TTStudent *student4 = [[[TTStudent alloc]initStudetWithName:@"Andrey" secondName:@"Shumik" phrase:@"ya uge vihogu"]autorelease];
+    TTStudent *student5 = [[[TTStudent alloc]initStudetWithName:@"Ivan" secondName:@"Doroshenko" phrase:@"toliko pobeda"]autorelease];
+    TTStudent *student6 = [[[TTStudent alloc]initStudetWithName:@"Maksim" secondName:@"Tatarenko" phrase:@"nu za ribalku"]autorelease];
+    TTStudent *student7 = [[[TTStudent alloc]initStudetWithName:@"Andrey" secondName:@"Ivanov" phrase:@"Senya beregi nogu"]autorelease];
     
     
     NSMutableDictionary *journal = [[[NSMutableDictionary alloc]initWithObjectsAndKeys:
